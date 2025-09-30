@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+langchain
+langgraph
+python-dotenv
+python-docx
+beautifulsoup4
+playwright
+httpx
+pydantic
+jinja2
