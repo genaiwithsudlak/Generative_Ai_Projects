@@ -1,6 +1,14 @@
 import hashlib
 import requests
-from config import OPENAI_API_KEY, OPENAI_MODEL, CACHE_DIR
+import sys
+from pathlib import Path
+
+# Ensure project root is in Python path
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+
+from .config import OPENAI_API_KEY, OPENAI_MODEL, CACHE_DIR
+
+
 
 OPENAI_TTS_ENDPOINT = "https://api.openai.com/v1/audio/speech"
 

@@ -1,9 +1,6 @@
 import time
-from pathlib import Path
-
 import streamlit as st
-
-from config import CACHE_DIR, OUT_DIR, DEFAULT_VOICE, CHUNK_MAX_CHARS, CHUNK_OVERLAP
+from Scripts.config import CACHE_DIR, OUT_DIR, DEFAULT_VOICE, CHUNK_MAX_CHARS, CHUNK_OVERLAP
 from Scripts.pdf_utils import extract_text_from_pdf_bytes
 from Scripts.chunk_utils import simple_chunker
 from Scripts.tts_utils import sha256_text, synthesize_chunk_tts

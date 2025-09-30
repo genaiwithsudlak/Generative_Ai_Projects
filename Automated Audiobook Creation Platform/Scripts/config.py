@@ -1,6 +1,8 @@
 from pathlib import Path
 import os
 
+from dotenv import load_dotenv
+load_dotenv()
 # Model and API
 OPENAI_MODEL = "gpt-4o-mini-tts"
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
