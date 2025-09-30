@@ -1,0 +1,5 @@
+streamlit
+PyMuPDF        # pip install PyMuPDF
+requests
+pydub
+python-dotenv
